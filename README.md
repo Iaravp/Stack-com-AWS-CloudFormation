@@ -44,16 +44,19 @@ Monitore a aba "Events" até que o status mude para CREATE_COMPLETE.
 Execute o comando abaixo, substituindo os valores entre colchetes ([ ]):
 
 | Bash |
-|--------------------------------------------------------------|
+|--------------------------------------|
+``` 
  aws cloudformation create-stack \
 --stack-name [NOME_DA_STACK] \
 --template-body file://cloudformation/main.yaml \
 --parameters \
+|
     ParameterKey=Ambiente,ParameterValue=[dev|prod] \
     ParameterKey=BucketPrefix,ParameterValue=[meuprojeto] \
 --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM \
+|
 --region [REGIAO_AWS] 
-
+|
 
 ℹ️ Observação sobre CAPABILITY_IAM: O parâmetro --capabilities é obrigatório se o seu template criar recursos do IAM (ex: Roles, Policies).
 
