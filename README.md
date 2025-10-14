@@ -24,11 +24,11 @@ O processo pode ser feito via Console AWS ou AWS CLI.
 ### 1. Via AWS Console
 Acesse o serviço AWS CloudFormation no Console AWS e selecione a região de destino.
 
-Clique em "Create stack" (Criar stack) e escolha "With new resources (standard)".
+#### Clique em "Create stack" (Criar stack) e escolha "With new resources (standard)".
 
 Em "Specify template", selecione "Upload a template file" e faça upload do arquivo cloudformation/main.yaml.
 
-Clique em "Next".
+#### Clique em "Next".
 
 Na página "Specify stack details":
 
@@ -43,16 +43,16 @@ Monitore a aba "Events" até que o status mude para CREATE_COMPLETE.
 ### 2. Via AWS CLI (Linha de Comando)
 Execute o comando abaixo, substituindo os valores entre colchetes ([ ]):
 
-Bash
-
-aws cloudformation create-stack \
+| Bash | 
+|---|
+| aws cloudformation create-stack \
 --stack-name [NOME_DA_STACK] \
 --template-body file://cloudformation/main.yaml \
 --parameters \
     ParameterKey=Ambiente,ParameterValue=[dev|prod] \
     ParameterKey=BucketPrefix,ParameterValue=[meuprojeto] \
 --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM \
---region [REGIAO_AWS]
+--region [REGIAO_AWS] |
 ℹ️ Observação sobre CAPABILITY_IAM: O parâmetro --capabilities é obrigatório se o seu template criar recursos do IAM (ex: Roles, Policies).
 
 ## 🛠 Visualização dos Recursos
