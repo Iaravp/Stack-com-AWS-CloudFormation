@@ -21,7 +21,7 @@ Para criar a stack, você precisará ter:
 ## 🚀 Geração da Stack
 O processo pode ser feito via Console AWS ou AWS CLI.
 
-1. Via AWS Console
+### 1. Via AWS Console
 Acesse o serviço AWS CloudFormation no Console AWS e selecione a região de destino.
 
 Clique em "Create stack" (Criar stack) e escolha "With new resources (standard)".
@@ -40,7 +40,7 @@ Siga as próximas telas, revisando as configurações e as Capabilities (Capacid
 
 Monitore a aba "Events" até que o status mude para CREATE_COMPLETE.
 
-2. Via AWS CLI (Linha de Comando)
+### 2. Via AWS CLI (Linha de Comando)
 Execute o comando abaixo, substituindo os valores entre colchetes ([ ]):
 
 Bash
@@ -55,16 +55,16 @@ aws cloudformation create-stack \
 --region [REGIAO_AWS]
 ℹ️ Observação sobre CAPABILITY_IAM: O parâmetro --capabilities é obrigatório se o seu template criar recursos do IAM (ex: Roles, Policies).
 
-🛠 Visualização dos Recursos
+## 🛠 Visualização dos Recursos
 Após a criação bem-sucedida, você pode encontrar as informações e endpoints importantes na aba "Outputs" (Saídas) da sua stack no Console CloudFormation.
 
-Exemplo de Output que você pode obter:
+### Exemplo de Output que você pode obter:
 
 Chave	Descrição	Valor (Exemplo)
 S3BucketName	Nome do S3 Bucket criado	meuprojeto-s3-backup-dev
 LambdaFunctionName	Nome da Função Lambda	processa-dados-dev
 
-Exportar para as Planilhas
+## Exportar para as Planilhas
 🗑 Exclusão da Stack
 Para excluir todos os recursos criados pela stack (e evitar cobranças), siga os passos:
 
