@@ -44,7 +44,7 @@ Monitore a aba "Events" até que o status mude para CREATE_COMPLETE.
 Execute o comando abaixo, substituindo os valores entre colchetes ([ ]):
 
 | Bash | 
-|---|
+|--------------------------------------------------------------|
 | aws cloudformation create-stack \
 --stack-name [NOME_DA_STACK] \
 --template-body file://cloudformation/main.yaml \
