@@ -60,9 +60,9 @@ Após a criação bem-sucedida, você pode encontrar as informações e endpoint
 
 ### Exemplo de Output que você pode obter:
 
-Chave	Descrição	Valor (Exemplo)
-S3BucketName	Nome do S3 Bucket criado	meuprojeto-s3-backup-dev
-LambdaFunctionName	Nome da Função Lambda	processa-dados-dev
+| Chave |	Descrição |	Valor (Exemplo)| 
+| S3BucketName	| Nome do S3 Bucket criado |	meuprojeto-s3-backup-dev
+| LambdaFunctionName |	Nome da Função Lambda |	processa-dados-dev
 
 ## Exportar para as Planilhas
 🗑 Exclusão da Stack
