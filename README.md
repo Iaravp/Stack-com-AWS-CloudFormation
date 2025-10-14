@@ -41,10 +41,9 @@ Siga as próximas telas, revisando as configurações e as Capabilities (Capacid
 Monitore a aba "Events" até que o status mude para CREATE_COMPLETE.
 
 ### 2. Via AWS CLI (Linha de Comando)
-Execute o comando abaixo, substituindo os valores entre colchetes ([ ]):
 
 | Bash |
-|---|
+|------|
 aws cloudformation create-stack \
 --stack-name [NOME_DA_STACK] \
 --template-body file://cloudformation/main.yaml \
