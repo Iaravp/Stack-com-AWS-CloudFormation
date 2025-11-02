@@ -1,13 +1,6 @@
 # 🏗 Stack com AWS CloudFormation
 Este repositório contém o template do AWS CloudFormation para provisionar a infraestrutura.
 
-## 📁 Estrutura do Repositório
-Arquivo/Pasta	Descrição
-cloudformation/	Contém os templates (modelos) do CloudFormation.
-cloudformation/main.yaml	Template principal que define todos os recursos da stack.
-scripts/	Scripts auxiliares, como para deploy via CLI (opcional).
-README.md	Este arquivo de documentação.
-
 ## Exportar para as Planilhas
 📋 Pré-requisitos
 Para criar a stack, você precisará ter:
